@@ -11,7 +11,7 @@ ui <- fluidPage(
                        placeholder = "Choose files",
                        tableOutput("files")),
              textOutput("text0"),
-             DT::dataTableOutput("contents")
+             DT::DTOutput("contents")
     ),
     # Panel 2
     tabPanel("Result",
