@@ -198,7 +198,7 @@ server <- function(input, output, session) {
       theme(plot.title = element_text(hjust = 0.5)) +
       xlab("Development Year") + ylab("Cumulative Paid Claims ($)") +
       geom_text(nudge_y = subset(claims_data_1, dev_year == "1" & 
-                                   loss_year == min(claims_data_1$loss_year))$claims_paid / 10, size = 2.5) + 
+                                   loss_year == min(claims_data_1$loss_year))$claims_paid / 30, size = 2.5) + 
       labs(col = "Loss Year") +
       theme(legend.position = "bottom")
   })
