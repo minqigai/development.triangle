@@ -7,6 +7,7 @@ library(ChainLadder)
 library(shinyjs)
 library(gridExtra)
 
+# Source the functions from the code file
 source("server.R")
 source("ui.R")
 
